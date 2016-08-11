@@ -66,7 +66,7 @@ This requirement may cause an issue when using babel-node: the transpiler will c
 **wrong**
 
 ```js
-import { setupNodeWebpack } from 'node-webpack;
+import { setupNodeWebpack } from 'node-webpack';
 
 setupNodeWebpack(...);
 
