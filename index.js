@@ -74,7 +74,7 @@ exports.setupNodeWebpack = function setupNodeWebpack(webpackBaseConfiguration, {
 
         let newModule = Module._cache[resolvedPath] = new Module(resolvedPath, this);
 
-        newModule.exports = loadModuleFromWebpack(moduleName);
+        newModule.exports = loadModuleFromWebpack(resolvedPath);
         newModule.loaded = true;
 
         return newModule.exports;
